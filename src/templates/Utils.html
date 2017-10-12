@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/util.css')}}">
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FIG Utility Page</title>
+</head>
+<body>
+<div class=head>FIG Utility Page</div>
+<h1>PDF splitter</h1>
+<form method="post" action="/SplitPdf" enctype = "multipart/form-data">
+ <input type=file name=splitpdf>
+ <input type="submit" value="Split pdf">
+ </form><br><br>
+<h1>Deposit attachment resolver (Stjohns problem)</h1>
+<form method="post" action="/StJohns" enctype = "multipart/form-data">
+ <input type=file name=folder webkitdirectory mozdirectory msdirectory odirectory directory multiple>
+ <br>
+ <font class="header">Enter totals for deposits: </font>
+ <input type=text name=totals placeholder="Enter comma to represent multiple...">
+ <br>
+ <font class="header">Enter County name: </font>
+ <input type=text name=county placeholder="Enter county...">
+ <input type="submit" value="generate stjohns files">
+ </form>
+ <h1>Get deposit document</h1>
+ <form action="/pdfView" method="post">
+ <font class="header">Enter quickbase id</font>
+ <input type="search" name="depid" />
+ </form>
+</body>
+</html>

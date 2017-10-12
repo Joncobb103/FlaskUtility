@@ -1,0 +1,1 @@
+Select ocr_text from developer.rocrv where deposit_id = (REPLACE ID)

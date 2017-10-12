@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+.head{
+	background-color:black;
+	border-bottom: 3px solid DeepSkyBlue;
+	font-size: xx-large;
+	font-style: oblique;
+	color:white;
+	text-shadow: 2px 2px DeepSkyBlue;
+	width:100%;
+	padding: 10px;
+}
+
+.header{
+	font-size: large;
+	font-style: oblique;
+}
+
+input[type=text]{
+ 	width:300px;
+ 	border-radius: 80px;
+ 	padding: 5px;
+ 	border: 1px solid grey;
+}
+input[type=search]{
+ 	width:300px;
+ 	border-radius: 80px;
+ 	padding: 5px;
+ 	border: 1px solid grey;
+}
